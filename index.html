@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA 2569 Portfolio - Kru Jitakorn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PA <span>2569</span> Dashboard</div>
+            <ul class="nav-links">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#agreement">ข้อตกลง PA</a></li>
+                <li><a href="#edu">ประวัติ</a></li>
+                <li><a href="#gallery">ผลงาน</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="badge">Performance Agreement (วPA) 2569</span>
+                    <h1>นายจิตรกร กิจเฉลียว</h1>
+                    <h2>Mr. Jitakorn Kitchaliew</h2>
+                    <div class="info-tag">ตำแหน่งครู วิทยฐานะ ชำนาญการพิเศษ</div>
+                    <p>ครูผู้สอนวิชาเทคโนโลยี (วิทยาการคำนวณ) และคอมพิวเตอร์</p>
+                    <div class="hero-cta">
+                        <a href="#agreement" class="btn-primary">ดูรายงาน วPA</a>
+                    </div>
+                </div>
+                <div class="profile-frame">
+                    <img src="A.jpg" alt="Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="agreement" class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">ข้อตกลงในการพัฒนางาน ปีงบประมาณ 2569</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <h3>ประเด็นท้าทาย</h3>
+                    <p>การพัฒนาทักษะการคิดเชิงคำนวณโดยใช้รูปแบบการสอน Active Learning</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <h3>เป้าหมายเชิงปริมาณ</h3>
+                    <p>นักเรียนร้อยละ 80 มีผลการเรียนผ่านเกณฑ์ที่กำหนด</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✨</div>
+                    <h3>เป้าหมายเชิงคุณภาพ</h3>
+                    <p>นักเรียนมีความพึงพอใจและสามารถประยุกต์ใช้เทคโนโลยีได้จริง</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="edu" class="section bg-dark">
+        <div class="container">
+            <div class="infographic-container">
+                <div class="info-header">
+                    <h2>ประวัติการศึกษาและการทำงาน</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time-circle">B.Ed.</div>
+                        <div class="time-content">
+                            <h3>ปริญญาตรี</h3>
+                            <p>สาขา คอมพิวเตอร์ศึกษา</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-circle">M.Ed.</div>
+                        <div class="time-content">
+                            <h3>ปริญญาโท</h3>
+                            <p>สาขา บริหารการศึกษา</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">หลักฐานเชิงประจักษ์ (Evidence Gallery)</h2>
+            <div class="full-gallery-grid">
+                <div class="gallery-card"><img src="1.jpg" alt="Activity 1"></div>
+                <div class="gallery-card"><img src="2.jpg" alt="Activity 2"></div>
+                <div class="gallery-card"><img src="3.jpg" alt="Activity 3"></div>
+                <div class="gallery-card"><img src="4.jpg" alt="Activity 4"></div>
+                <div class="gallery-card"><img src="5.jpg" alt="Activity 5"></div>
+                <div class="gallery-card"><img src="6.jpg" alt="Activity 6"></div>
+                <div class="gallery-card"><img src="7.jpg" alt="Activity 7"></div>
+                <div class="gallery-card"><img src="8.jpg" alt="Activity 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>ระบบนำเสนอผลงานออนไลน์ครูจิตรกร กิจเฉลียว (PA 2569) &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
