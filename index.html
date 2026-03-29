@@ -1,128 +1,253 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA 2569 Portfolio - Kru Jitakorn</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">PA <span>2569</span> Dashboard</div>
-            <ul class="nav-links">
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#agreement">ข้อตกลง PA</a></li>
-                <li><a href="#edu">ประวัติ</a></li>
-                <li><a href="#gallery">ผลงาน</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-flex">
-                <div class="hero-text">
-                    <span class="badge">Performance Agreement (วPA) 2569</span>
-                    <h1>นายจิตรกร กิจเฉลียว</h1>
-                    <h2>Mr. Jitakorn Kitchaliew</h2>
-                    <div class="info-tag">ตำแหน่งครู วิทยฐานะ ชำนาญการพิเศษ</div>
-                    <p>ครูผู้สอนวิชาเทคโนโลยี (วิทยาการคำนวณ) และคอมพิวเตอร์</p>
-                    <div class="hero-cta">
-                        <a href="#agreement" class="btn-primary">ดูรายงาน วPA</a>
-                    </div>
-                </div>
-                <div class="profile-frame">
-                    <img src="A.jpg" alt="Profile" class="profile-img">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="agreement" class="section bg-white">
-        <div class="container">
-            <h2 class="section-title">ข้อตกลงในการพัฒนางาน ปีงบประมาณ 2569</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon">🎯</div>
-                    <h3>ประเด็นท้าทาย</h3>
-                    <p>การพัฒนาทักษะการคิดเชิงคำนวณโดยใช้รูปแบบการสอน Active Learning</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">📈</div>
-                    <h3>เป้าหมายเชิงปริมาณ</h3>
-                    <p>นักเรียนร้อยละ 80 มีผลการเรียนผ่านเกณฑ์ที่กำหนด</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">✨</div>
-                    <h3>เป้าหมายเชิงคุณภาพ</h3>
-                    <p>นักเรียนมีความพึงพอใจและสามารถประยุกต์ใช้เทคโนโลยีได้จริง</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="edu" class="section bg-dark">
-        <div class="container">
-            <div class="infographic-container">
-                <div class="info-header">
-                    <h2>ประวัติการศึกษาและการทำงาน</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="time-circle">B.Ed.</div>
-                        <div class="time-content">
-                            <h3>ปริญญาตรี</h3>
-                            <p>สาขา คอมพิวเตอร์ศึกษา</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time-circle">M.Ed.</div>
-                        <div class="time-content">
-                            <h3>ปริญญาโท</h3>
-                            <p>สาขา บริหารการศึกษา</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="section">
-        <div class="container">
-            <h2 class="section-title">หลักฐานเชิงประจักษ์ (Evidence Gallery)</h2>
-            <div class="full-gallery-grid">
-                <div class="gallery-card"><img src="1.jpg" alt="Activity 1"></div>
-                <div class="gallery-card"><img src="2.jpg" alt="Activity 2"></div>
-                <div class="gallery-card"><img src="3.jpg" alt="Activity 3"></div>
-                <div class="gallery-card"><img src="4.jpg" alt="Activity 4"></div>
-                <div class="gallery-card"><img src="5.jpg" alt="Activity 5"></div>
-                <div class="gallery-card"><img src="6.jpg" alt="Activity 6"></div>
-                <div class="gallery-card"><img src="7.jpg" alt="Activity 7"></div>
-                <div class="gallery-card"><img src="8.jpg" alt="Activity 8"></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>ระบบนำเสนอผลงานออนไลน์ครูจิตรกร กิจเฉลียว (PA 2569) &copy; 2026</p>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+<html class="light" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>พอร์ตโฟลิโอวิชาการ - ครูจิตรกร กิจเฉลียว</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;700&amp;family=Sarabun:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#584200",
+              "on-primary-container": "#554300",
+              "inverse-primary": "#e9c349",
+              "secondary": "#725b27",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f5f3ef",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e4e2de",
+              "on-secondary-fixed-variant": "#584411",
+              "inverse-surface": "#30312e",
+              "tertiary-fixed": "#ffdf97",
+              "outline-variant": "#d0c5af",
+              "on-surface-variant": "#4d4635",
+              "secondary-fixed-dim": "#e1c384",
+              "surface-bright": "#fbf9f5",
+              "primary-fixed-dim": "#e9c349",
+              "surface": "#fbf9f5",
+              "on-primary": "#ffffff",
+              "on-error": "#ffffff",
+              "tertiary": "#745b18",
+              "on-surface": "#1b1c1a",
+              "outline": "#7f7663",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#f2f0ed",
+              "tertiary-fixed-dim": "#e4c375",
+              "surface-container": "#efeeea",
+              "tertiary-container": "#cfaf64",
+              "on-secondary-fixed": "#251a00",
+              "on-secondary-container": "#76602b",
+              "surface-container-high": "#eae8e4",
+              "primary-fixed": "#ffe088",
+              "on-background": "#1b1c1a",
+              "surface-dim": "#dbdad6",
+              "secondary-container": "#fbdc9b",
+              "on-secondary": "#ffffff",
+              "background": "#fbf9f5",
+              "on-primary-fixed-variant": "#574500",
+              "primary": "#735c00",
+              "on-tertiary-fixed-variant": "#5a4300",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#251a00",
+              "on-primary-fixed": "#241a00",
+              "primary-container": "#d4af37",
+              "surface-tint": "#735c00",
+              "secondary-fixed": "#fedf9e",
+              "surface-container-highest": "#e4e2de"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif Thai", "serif"],
+              "body": ["Sarabun", "sans-serif"],
+              "label": ["Sarabun", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
     </script>
-</body>
-</html>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .thai-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5 20h20l-15 12 5 20-15-12-15 12 5-20-15-12h20z' fill='%23735c00' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<nav class="bg-white/80 backdrop-blur-md border-b border-amber-200/20 shadow-sm fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-amber-700 cursor-pointer">menu</span>
+<h1 class="font-headline text-xl font-bold tracking-tight text-amber-800">พอร์ตโฟลิโอวิชาการ</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-amber-700 font-semibold border-b-2 border-amber-600 transition-colors" href="#home">หน้าแรก</a>
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#about">ประวัติ</a>
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#pa">ข้อตกลง PA</a>
+<a class="text-stone-600 hover:text-amber-600 transition-colors" href="#gallery">ผลงานนักเรียน</a>
+</div>
+<button class="text-stone-600 hover:text-amber-600 transition-colors">เมนู</button>
+</div>
+</nav>
+<main class="pt-24 pb-20 max-w-7xl mx-auto px-6 relative">
+<div id="home" class="thai-pattern absolute inset-0 -z-10 opacity-50"></div>
+<!-- Hero / Personal Header -->
+<header class="mb-20 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-4 flex justify-center md:justify-start">
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary to-primary-container rounded-full opacity-20 blur-xl group-hover:opacity-30 transition-opacity"></div>
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-surface-container-lowest shadow-2xl overflow-hidden relative">
+<img alt="Portrait of Mr. Jitakorn" class="w-full h-full object-cover" src="A.jpg"/>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 space-y-4">
+<div class="inline-block px-4 py-1 bg-primary-container/20 text-primary font-medium rounded-full text-sm tracking-wide uppercase">Performance Agreement 2568</div>
+<h2 class="font-headline text-5xl md:text-7xl text-on-surface font-bold leading-tight">นายจิตรกร กิจเฉลียว</h2>
+<div class="flex flex-col gap-2">
+<p class="text-2xl font-headline text-primary italic">ครู วิทยฐานะ ชำนาญการพิเศษ</p>
+<p class="text-xl text-outline font-medium flex items-center gap-2">
+<span class="material-symbols-outlined">school</span>
+                        โรงเรียนท่าปลาอนุสรณ์ 1
+                    </p>
+<p class="text-lg text-on-surface-variant font-medium">
+                        กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี (วิทยาการคำนวณ)
+                    </p>
+</div>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Left Column: Details & Contact -->
+<div id="about" class="md:col-span-5 space-y-12">
+<!-- Personal Details Card -->
+<section class="bg-surface-container-lowest p-10 rounded-xl border-l-4 border-primary shadow-sm">
+<h3 class="font-headline text-2xl text-on-surface mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">badge</span>
+                        ข้อมูลส่วนบุคคล
+                    </h3>
+<div class="space-y-6">
+<div class="flex flex-col gap-1">
+<span class="text-xs uppercase tracking-widest text-outline font-bold">ตำแหน่ง</span>
+<span class="text-lg font-medium">ครู วิทยฐานะ ชำนาญการพิเศษ</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs uppercase tracking-widest text-outline font-bold">สถานศึกษา</span>
+<span class="text-lg font-medium">โรงเรียนท่าปลาอนุสรณ์ 1</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-xs uppercase tracking-widest text-outline font-bold">สังกัด</span>
+<span class="text-lg font-medium">สำนักงานเขตพื้นที่การศึกษาประถมศึกษาอุตรดิตถ์ เขต 2</span>
+</div>
+</div>
+</section>
+<!-- PA Agreement Highlights -->
+<section id="pa" class="bg-primary text-on-primary p-10 rounded-xl shadow-lg">
+<h3 class="font-headline text-2xl mb-6">ข้อตกลงในการพัฒนางาน (วPA)</h3>
+<div class="space-y-4 text-sm leading-relaxed">
+<p><strong class="text-primary-fixed">ประเด็นท้าทาย:</strong> การพัฒนาทักษะการคิดเชิงคำนวณโดยใช้รูปแบบการสอน Active Learning ด้วยห้องเรียนเสมือนจริงและการเขียนโปรแกรม (Coding)</p>
+<p><strong class="text-primary-fixed">เป้าหมาย:</strong> นักเรียนร้อยละ 80 มีผลการเรียนผ่านเกณฑ์ และสามารถประยุกต์ใช้เทคโนโลยีในการสร้างสรรค์ชิ้นงานได้อย่างมีประสิทธิภาพ</p>
+</div>
+</section>
+<!-- Contact Information -->
+<section class="bg-surface-container-low p-10 rounded-xl">
+<h3 class="font-headline text-2xl text-on-surface mb-8">การติดต่อ</h3>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="mailto:jitakorn.k@school.ac.th">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="text-on-surface-variant font-medium">jitakorn.k@school.ac.th</span>
+</a>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<span class="text-on-surface-variant font-medium leading-relaxed">
+                                โรงเรียนท่าปลาอนุสรณ์ 1<br/>จ.อุตรดิตถ์
+                            </span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Education & Evidence -->
+<div class="md:col-span-7 space-y-12">
+<!-- Education Timeline -->
+<section class="bg-surface-container-low p-10 md:p-14 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 opacity-5 pointer-events-none translate-x-20 -translate-y-20">
+<span class="material-symbols-outlined text-[15rem] text-primary">history_edu</span>
+</div>
+<h3 class="font-headline text-3xl text-on-surface mb-12">ประวัติการศึกษา</h3>
+<div class="space-y-2">
+<!-- Master's -->
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-white ring-8 ring-primary/10 z-10">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div class="w-0.5 h-full bg-primary/20"></div>
+</div>
+<div class="pb-16 pt-1">
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-1">ปริญญาโท (M.Ed.)</h4>
+<p class="text-on-surface-variant text-lg">สาขาวิชาการบริหารการศึกษา</p>
+</div>
+</div>
+<!-- Bachelor's -->
+<div class="flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary z-10 border-2 border-primary/20">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+</div>
+<div class="pt-1">
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-1">ปริญญาตรี (B.Ed.)</h4>
+<p class="text-on-surface-variant text-lg">สาขาวิชาคอมพิวเตอร์ศึกษา</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Evidence Gallery -->
+<section id="gallery" class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border-t-4 border-primary">
+<h3 class="font-headline text-3xl text-on-surface mb-8">หลักฐานเชิงประจักษ์</h3>
+<div class="grid grid-cols-2 gap-4">
+<img src="1.jpg" alt="Activity 1" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="2.jpg" alt="Activity 2" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="3.jpg" alt="Activity 3" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="4.jpg" alt="Activity 4" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="5.jpg" alt="Activity 5" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="6.jpg" alt="Activity 6" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="7.jpg" alt="Activity 7" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+<img src="8.jpg" alt="Activity 8" class="rounded-lg shadow hover:scale-105 transition-transform cursor-zoom-in"/>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-stone-100 border-t border-amber-200">
+<div class="py-12 px-8 flex flex-col items-center gap-6 text-center max-w-7xl mx-auto">
+<h4 class="font-headline font-bold text-amber-700 text-lg">พอร์ตโฟลิโอวิชาการ นายจิตรกร กิจเฉลียว</h4>
+<div class="flex flex-wrap justify-center gap-6 font-work-sans text-sm text-stone-600">
+<span>ตำแหน่งครู วิทยฐานะ ชำนาญการพิเศษ</span>
+<span>โรงเรียนท่าปลาอนุสรณ์ 1</span>
+</div>
+<p class="font-work-sans text-sm text-stone-500">© 2026 แฟ้มสะสมผลงานอิเล็กทรอนิกส์ (วPA). สงวนลิขสิทธิ์.</p>
+</div>
+</footer>
+</body></html>
